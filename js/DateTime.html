@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vnesh">
+        <div class="accordion">
+            <button id="block" class="accordion-button">Задание 1 - Дата/Время</button>
+            <div class="panel">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+
+        <div class="div-calendar">
+            <button id="block" class="button-calendar">Задание 2 - Календарь</button>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button class="button123" onclick="prevMonth()">◁</button>
+                    <h3 id="month-year"></h3>
+                    <button class="button123" onclick="nextMonth()">▷</button>
+                </div>
+                <div class="days" id="calendar-days"></div>
+            </div>
+        </div>
+
+        <div class="div-3">
+            <button id="block" class="button-3">Задание 3</button>
+            <div class="panel-3">
+                <div id="text3" class="text-3">text</div>
+            </div>
+        </div>
+
+        <div class="div-4">
+            <button id="block" onclick="Counter()" class="button-4">Задание 4</button>
+        </div>
+
+        <div class="div-5">
+            <button id="block" class="button-5">Задание 5</button>
+            <div class="panel-5">
+                <button class="button_lab5" onclick="addTableRow()">Добавить строку в таблицу</button>
+                <div class="tab">
+                    <h3>Таблица</h3>
+                    <table id="myTable">
+                        <tr><th>Данные</th></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-6">
+            <button id="block" class="button-6">Задание 6</button>
+            <div class="panel-6">
+                <div id="linksContainer"></div>
+                <button class="button-lab6" onclick="addLink()">Добавить ссылку</button>
+            </div>
+        </div>
+
+        <div class="div-7">
+            <button id="block" class="button-7">Задание 7</button>
+            <div class="panel-7" id="menu">
+                <button class="button-lab7" id="toggleMenu">Здесь сладости (нажми на меня!)</button>
+                <ul id="sweetsList">
+                    <li>Пирожное</li>
+                    <li>Мед</li>
+                    <li>Конфета</li>
+                </ul>
+                <div id="message">Сладости закончились (УВЫ!)</div>
+            </div>
+        </div>
+
+        <div class="div-8">
+            <button id="block" class="button-8">Задание 8</button>
+            <div class="panel-8">
+                <div class="image-wrapper" id="imageContainer">
+                    <img id="hoverImage" src="1.jfif" alt="Картинка">
+                    <div class="image-text" id="textBehind">ОБЕЗЬЯНКА</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-9">
+            <button id="block" class="button-9">Задание 9</button>
+            <div class="panel-9">
+                <form id="form">
+                    <h2>Форма с валидацией</h2>
+                
+                    <div class="row">
+                    <div class="col">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login" required>
+                        <div class="error" id="loginError"></div>
+                    </div>
+                    <div class="col">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" required>
+                        <div class="error" id="nameError"></div>
+                    </div>
+                    </div>
+                
+                    <label for="password">Пароль</label>
+                    <input type="text" id="password" required>
+                    <div class="error" id="passwordError"></div>
+                
+                    <label for="confirmPassword">Повторите пароль</label>
+                    <input type="password" id="confirmPassword" required>
+                    <div class="error" id="confirmError"></div>
+                
+                    <div class="row">
+                    <div class="col">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="col">
+                        <label for="dob">Дата рождения</label>
+                        <input type="date" id="dob">
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="uni" class="col">
+                            <label>Университет
+                                <select id="university">
+                                  <option value="none">-- Выберите --</option>
+                                  <option value="msu">КУБГУ</option>
+                                  <option value="spbu">КУБГТУ</option>
+                                  <option value="urfu">КУБГАУ</option>
+                                </select>
+                              </label><br><br>
+                        </div>
+                        </div>
+                
+                    <label for="about">О себе</label>
+                    <textarea id="about" rows="3"></textarea>
+                
+                    <label>Ваш пол</label>
+                    <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Мужчина"> Мужчина</label>
+                    <label><input type="radio" name="gender" value="Женщина"> Женщина</label>
+                    <label><input type="radio" name="gender" value="Не скажу"> Не скажу</label>
+                    </div>
+                
+                    <label for="experience">Опыт работы (мес)</label>
+                    <input type="number" id="experience" min="0">
+                
+                    <label for="skills">Навыки</label>
+                    <textarea id="skills" rows="2"></textarea>
+                
+                    <button class="button-lab9" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="script5.js"></script>
+    <script src="script6.js"></script>
+    <script src="script7.js"></script>
+    <script src="script8.js"></script>
+    <script src="script9.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+
+body {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  #toggle {
+    display: none;
+  }
+  
+  /**
+    Hamburger
+  **/
+  .hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /**
+  Nav Styles
+  **/
+  .nav {
+    position: fixed;
+    width: 250px;
+    height: 320px;
+    background-color: #000000;
+    opacity: 0.75;
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  nav {
+    text-align: left;
+    margin-left: 25%;
+  }
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  nav a:hover {
+    color: white;
+  }
+  nav a:hover:before {
+    height: 100%;
+  }
+  
+  /**
+  Animations
+  **/
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -2px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* свойства хедера */
+
+.logo{
+    display: flex;
+    max-width: 1920px;
+    height: 115px;
+}
+.logo-div-1{
+    width: 25%;
+}
+.logo-div-2{
+    width: 250px;
+}
+.logo-div-3{
+    width: 80%;
+}
+.logo-div-4{
+    width: 70px
+}
+
+.hero{
+    margin-top: -1px;
+}
+.img-kurica{
+    object-fit: cover;
+    width: 100%;
+    height: 950px;
+}
+.skobki{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-text {
+    width: 500px;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+}
+
+.hero-picture-our-team{
+    margin-top: -450px;
+}
+.img-salat{
+    object-fit: cover;
+    width: 100%;
+    height: 950px;
+}
+.hero-text-our-team {
+    width: 550px;
+    position: relative;
+    top: -1130px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+}
+.skobki-our-team{
+    position: relative;
+    top: -720px;
+    width: 650px;
+    margin: auto;
+}
+
+
+.img-cat{
+    object-fit: cover;
+    width: 100%;
+    height: 1030px;
+}
+.hero-text-our-menu {
+    width: 480px;
+    position: relative;
+    top: -870px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+.hero-text-our-menu h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.hero-text-our-menu h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.hero-our-menu1234{
+    position: relative;
+    top: -800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    max-width: 1100px;
+    margin: auto;
+}
+.our-menu1234{
+    width: 200px;
+    padding-left: 50px;
+}
+.our-menu1234 h1{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    line-height: 20px;
+}
+
+
+
+/* свойства меню */
+
+.menu{
+    margin-top: -100px;
+}
+.menu-title{
+}
+.img-menu-title{
+    width: 160px;
+    height: 96px;
+    position: relative;
+    top: 30px;
+    margin: auto;
+}
+.menu123{    
+    max-width: 1230px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    margin: auto;
+}
+.menu1{
+    width: 345px;
+    padding: 20px;
+    padding-left: 70px;
+}
+.menu-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.menu1 h2{
+    text-align:left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(150, 150, 150);
+}
+.menu1 h3{
+    text-align:left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+}
+.menu1 p{
+    text-align:left;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+}
+.button-1{
+    position: relative;
+    bottom: -30px;
+    font-family: "Noto Serif Hentaigana", serif;
+    padding: 20px 30px;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(119, 119, 119);
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* свойства нашего меню */
+
+.our-menu{
+    position: relative;
+    top: -400px;
+}
+.our-menu-title{
+}
+.img-our-menu-title{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    margin: auto;
+}
+.our-menu123{     
+    max-width: 1150px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    margin: auto;
+}
+.our-menu1{
+    height: 420px;
+    width: 350px;
+    padding: 20px;
+    padding-left: 70px;
+}
+.our-menu-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.our-menu1 h2{
+    text-align:left;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(80, 80, 80);
+}
+.our-menu1 h3{
+    text-align:left;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(119, 119, 119);
+}
+
+
+/* свойства нашей команды */
+
+.our-team{
+    margin-top: -850px;
+}
+.our-team-title{
+}
+.img-our-team-title{
+    width: 160px;
+    height: 96px;
+    position: relative;
+    top: 30px;
+    margin: auto;
+}
+.our-team123{
+    padding-top: 80px;
+    max-width: 1200px;   
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.our-team1{
+    width: 250px;
+    padding: 20px;
+}
+.our-team-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+}
+.our-team1 h2{
+    text-align:center;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+.our-team1 h3{
+    text-align:center;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+.our-team-title h4{
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+/* свойства футера */
+
+.footer-all{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-adress{
+    padding: 20px;
+    max-width: 400px;
+}
+.footer-adress-1 h1{
+    text-align:left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+}
+.footer-adress-1 h2{
+    text-align:left;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(119, 119, 119);
+}
+.footer-adress-2{
+    padding-top: 30px;
+    width: 200px;
+}
+.footer-adress-2 h1{
+    text-align:left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-email{
+    padding-top: 20px;
+    padding-right: 50px;
+    width: 500px;
+}
+.footer-email-1 h1{
+    padding-left: 20px;
+    text-align:left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+}
+
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"] {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    outline: none;
+}
+textarea {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    resize: vertical;
+    outline: none;
+}
+button {
+    font-family: "Noto Serif Hentaigana", serif;
+    font-size: 20px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px 30px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+
+body { background: #acacac; 
+    overflow: hidden; 
+    font-family: sans-serif; }
+canvas { display: block;
+    margin: 0 auto;
+    background: #ececec; 
+    border: 2px solid #222; 
+}
+.management{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+.vnesh{
+    padding-top: 70px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.player h1{
+    font-size: 30px;
+}
+.player h2{
+    font-size: 30px;
+}
+.player h3{
+    font-size: 30px;
+}
+.player h4{
+    font-size: 30px;
+}
